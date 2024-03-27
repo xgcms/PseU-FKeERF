@@ -21,4 +21,7 @@ The file provides combination rules for multiple masses, different rules for dec
 ### utils.py
 The file provides tool methods, including logging runtime.
 ### demo.py
-Read the csv file after feature extraction and processing, and input it into the FKeERF model to calculate the relevant indicators.
+Read the csv file after feature extraction and processing, and input it into the FKeERF model to calculate the relevant indicators.<br>
+'''java
+pd.read_csv("xxx.csv")
+'''
