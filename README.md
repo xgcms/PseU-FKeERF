@@ -4,9 +4,9 @@ FKeERF method has three parts, including constructing fuzzy feature set, constru
 
 ## Requirements
 python=3.9.13
-<br>
-numpy=1.21.5
-pandas=1.4.4
+
+numpy=1.21.5<br>
+pandas=1.4.4<br>
 scikit-learn=1.0.2
 
 ## Usage
