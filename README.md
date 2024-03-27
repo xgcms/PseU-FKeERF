@@ -7,7 +7,9 @@ python=3.9.13
 
 numpy=1.21.5<br>
 pandas=1.4.4<br>
-scikit-learn=1.0.2
+scikit-learn=1.0.2<br>
+scikit-fuzzy=0.4.2<br>
+
 
 ## Usage
 ### decision_tree_imperfect.py
