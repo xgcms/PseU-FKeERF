@@ -24,6 +24,37 @@ The file provides combination rules for multiple masses, different rules for dec
 The file provides tool methods, including logging runtime.
 ### demo.py
 Read the csv file after feature extraction and processing, and input it into the FKeERF model to calculate the relevant indicators.<br>
+
+First, read the original feature set xx.csv after feature selection processing.<br>
 ```java
 pd.read_csv("xxx.csv")
 ```
+Then, cross-validation tests are performed.<br>
+```java
+acc, mcc, sn, sp = cross_validation(np.array(data))
+```
+When constructing fuzzy feature set, the number of clusters can be customized. <br>
+```java
+def gene_ante_fcm(data):
+    k = 3
+```
+When constructing a random forest of evidence, you can customize the tree size and minimum sample leaf number of the tree.<br>
+```java
+def train_test(train_set, test_set):
+    clf = ERF(n_estimators=100, min_samples_leaf=4, criterion="conflict", rf_max_features="sqrt", n_jobs=1)
+```
+Use the fit() method to train the model.<br>
+```java
+clf.fit(train_set[:, 1:], y_train_belief)
+```
+Finally, the kernel method is used to predict the labels of unknown samples.<br>
+
+##Parameters description
+k Number of clusters in a cluster. The default value is 3. <br>
+n_estimators Tree tree. The default value is 100. <br>
+min_samples_leaf Minimum number of sample leaves. The default value is 4. <br>
+
+
+
+
+
