@@ -51,7 +51,7 @@ Finally, the kernel method is used to predict the labels of unknown samples.<br>
 
 ## Parameters description
 **k** is the number of clusters in the cluster, and the default value is 3. <br>
-**n_estimators** is the number of estimators (evidence decision trees), the default is 100. <br>
+**n_estimators** is the number of estimators (evidence decision trees), and the default is 100. <br>
 **min_samples_leaf** is the minimum number of sample leaves. The default value is 4. <br>
 
 
